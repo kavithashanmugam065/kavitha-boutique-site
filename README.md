@@ -62,10 +62,6 @@ kavitha-boutique-site/
 
 ---
 
-## Screenshots
-
-Add screenshots of your website interface here for visual appeal.
-
 ---
 
 ## Author
