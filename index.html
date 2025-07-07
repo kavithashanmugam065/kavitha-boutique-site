@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> kavi's Boutique</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #e3f0ff, #f8f0ff);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-color: white;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #100f0f;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #100f0f;
+    }
+
+    header {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1618354691549-d2f4e4d3e053') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    header .content {
+      max-width: 800px;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 12px 30px;
+      font-size: 1rem;
+      background-color: #0a0a0a;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #151515;
+      transform: scale(1.05);
+    }
+
+    .features, .shop-preview {
+      padding: 80px 50px;
+      background-color: #fff;
+    }
+
+    .features h2, .shop-preview h2 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      font-size: 2.5rem;
+      color: #141313;
+      margin-bottom: 50px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+    }
+
+    .feature {
+      background-color: #fff7f7;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+      transition: all 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 15px;
+    }
+
+    .feature h3 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .product {
+      background-color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+    }
+
+    .product img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .info h4 {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .info p {
+      font-size: 1rem;
+      color: #888;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">kavi</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="content">
+      <h1>Unfold Your Style</h1>
+      <p>Chic. Elegant. Confident. Redefine fashion with us.</p>
+      <button class="btn">Explore Now</button>
+    </div>
+  </header>
+
+  <section class="features" id="features">
+    <h2>Why Choose kavi's boutique?</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <img src="https://img.icons8.com/ios/100/dress-front-view--v1.png" />
+        <h3>Modern Designs</h3>
+        <p>We bring trending fashion to your wardrobe, season after season.</p>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/ios/100/sparkling-diamond.png" />
+        <h3>Premium Quality</h3>
+        <p>Only the finest craftsmanship for our discerning customers.</p>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/ios/100/delivery.png" />
+        <h3>Speedy Delivery</h3>
+        <p>Fast, reliable delivery with hassle-free returns.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop-preview" id="shop">
+    <h2>Shop the Look</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-yw2U6muNIMKHXtqNBicjbXamxnfBN074dw&s" />
+        <div class="info">
+          <h4>Ethnic Elegance</h4>
+          <p>₹1,499</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG4gC4ywx4Ro2mf7kPswy5gZHQkJwGVfkTbw&s" />
+        <div class="info">
+          <h4>Designer Collection</h4>
+          <p>₹2,299</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmJ8Ert15lbc3YuBijHJ9T8WJnyOfPkVZDEw&s" />
+        <div class="info">
+          <h4>Trendy Chic</h4>
+          <p>₹1,899</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 . Designed by kavitha.</p>
+  </footer>
+</body>
+
+</html>
